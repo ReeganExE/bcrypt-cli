@@ -4,6 +4,12 @@
 
 This tool allows generating the bcrypt hash for the provided password through stdin 
 
+# Install
+
+Download the pre-built binary from https://github.com/ReeganExE/bcrypt-cli/releases/latest
+
+> *Supported: Linux, macOS, Windows, Raspberry Pi family*
+
 # Basic usage
 
 ~~~bash
