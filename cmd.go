@@ -27,17 +27,25 @@ func (c *BcryptGenerateCmd) Execute(args []string) error {
 		return fmt.Errorf("cost %d is outside allowed range (4,31)", c.Cost)
 	}
 
+	var data []byte
 	var in io.Reader
 	if c.InReader != nil {
 		in = c.InReader
 	} else if hasPipedStdin() {
 		in = os.Stdin
 	} else {
-		return fmt.Errorf("you must provide the password through stdin")
+		fmt.Print("Enter: ")
+		_, err := fmt.Scanf("%s", &data)
+		if err != nil {
+			return err
+		}
 	}
-	data, err := ioutil.ReadAll(in)
-	if err != nil {
-		return err
+	if in != nil {
+		var err error
+		data, err = ioutil.ReadAll(in)
+		if err != nil {
+			return err
+		}
 	}
 
 	cb, err := bcrypt.GenerateFromPassword(data, c.Cost)
