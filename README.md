@@ -1,4 +1,4 @@
-[![CI](https://github.com/bitnami/bcrypt-cli/actions/workflows/main.yml/badge.svg)](https://github.com/bitnami/bcrypt-cli/actions/workflows/main.yml)
+[![CI](https://github.com/ReeganExE/bcrypt-cli/actions/workflows/main.yml/badge.svg)](https://github.com/ReeganExE/bcrypt-cli/actions/workflows/main.yml)
 
 # bcrypt
 
