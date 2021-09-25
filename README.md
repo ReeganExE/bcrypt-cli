@@ -1,5 +1,8 @@
 [![CI](https://github.com/ReeganExE/bcrypt-cli/actions/workflows/main.yml/badge.svg)](https://github.com/ReeganExE/bcrypt-cli/actions/workflows/main.yml)
 
+> The original [bitnami/bcrypt-cli](https://github.com/bitnami/bcrypt-cli) is not maintained and lacked binary build for latest OS versions.
+> This fork aims to provide latest pre-built binary and improved a bit of user-experience.
+
 # bcrypt
 
 This tool allows generating the bcrypt hash for the provided password through stdin 
